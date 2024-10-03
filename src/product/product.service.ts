@@ -28,7 +28,7 @@ export class ProductService {
       (product) => product.id === id,
     );
     if (productIndex === -1) {
-      throw new NotFoundException('Product not found');
+      throw new NotFoundException('Product not found⚠️');
     }
 
     const existingProduct = this.products[productIndex];
